@@ -5,8 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,13 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tla-lY-obi">
-                                <rect key="frame" x="47" y="193" width="281" height="281.5"/>
+                                <rect key="frame" x="38.5" y="184.5" width="298.5" height="299"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Tla-lY-obi" secondAttribute="height" multiplier="1:1" id="Oa6-Vf-kLP"/>
+                                    <constraint firstAttribute="width" constant="299" id="0Z5-4Z-Wlc"/>
+                                    <constraint firstAttribute="height" constant="299" id="rVo-70-BBI"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq5-xr-x51">
-                                <rect key="frame" x="152.5" y="514.5" width="71" height="36"/>
+                                <rect key="frame" x="152.5" y="523.5" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +35,6 @@
                         <constraints>
                             <constraint firstItem="aq5-xr-x51" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2nr-jl-qbk"/>
                             <constraint firstItem="Tla-lY-obi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9m9-S0-o3D"/>
-                            <constraint firstItem="Tla-lY-obi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="3:4" id="Khn-bu-UkV"/>
                             <constraint firstItem="aq5-xr-x51" firstAttribute="top" secondItem="Tla-lY-obi" secondAttribute="bottom" constant="40" id="UeM-X9-zbO"/>
                             <constraint firstItem="Tla-lY-obi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bGC-8y-Tbn"/>
                         </constraints>
